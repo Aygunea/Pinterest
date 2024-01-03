@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="icon" href="images/pinterest.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Pinterest</title>
+</head>
+
+<body>
+    <div class="questionBox">
+        <i class="fa-solid fa-question"></i>
+        <div class="helpBox">
+            <div class="helpHeadContent">
+                <a href="#">Yardım Merkezini ziyaret edin</a>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <div class="helpHeadContent">
+                <a href="#">Widget oluşturun</a>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <hr>
+            <div class="helpLinks">
+                <a href="#">Hakkında</a>
+                <a href="#">Basın odası</a>
+                <a href="#">İşletmeler</a>
+                <a href="#">Kariyer</a>
+                <a href="#">Geliştiriciler</a>
+                <a href="#">Kaldırılanlar</a>
+                <a href="#">Gizlilik Politikası</a>
+                <a href="#">Kişiselleştirilmiş Reklamlar</a>
+                <a href="#">Gizlilik Haklarınız</a>
+                <a href="#">Terimler</a>
+            </div>
+
+        </div>
+    </div>
+    <div id="navbar">
+        <img src="images/pinterest.png" alt="">
+        <button class="homebtn">
+            <a href="index.html">Ana Sayfa</a>
+            <!--   <i class="fa-solid fa-chevron-down"></i>  -->
+        </button>
+        <a class="creat" href="creat.html">Oluştur</a>
+        <div class="search">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" placeholder="Ara">
+        </div>
+        <div class="notfications">
+            <a href="#">
+                <i class="fa-solid fa-bell"></i>
+            </a>
+            <div id="notficationsBox">
+                Bildirimler
+            </div>
+        </div>
+        <div class="messages">
+            <a class="messagesDots" href="#">
+                <i class="fa-solid fa-comment-dots"></i>
+                <div id="messagesBox">
+                    Mesajlar
+                </div>
+                <div class="messagesClicked">
+                    <div class="messagesHead">
+                        <span>Gelen Kutusu</span>
+                        <div class="ellipsis">
+                            <i class=" fa-solid fa-ellipsis"> </i>
+                            <div class="ellipsisText">
+                                <span>Tümünü okundu olarak işaretle</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="messageFoot">
+                        <div class="messageSearch">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" placeholder="Ara">
+                        </div>
+                        <div class="newMessage">
+                            <div class="messageIcon">
+                                <i class="fa-regular fa-pen-to-square"></i>
+                            </div>
+                            <span>Yeni mesaj</span>
+                        </div>
+                        <div class="inviteFriend">
+                            <div class="messageIcon">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+                            <div class="text">
+                                <p style="font-weight: 500;">Arkadaşlarınızı davet edin</p>
+                                <p>Sohbete başlamak için dokunun</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- inviteFriend classına  tıkladıqda açılan box  -->
+                    <div class="inviteFriendContact">
+                        <h2>Birlikte ilham alın</h2>
+                        <ol type="1">
+                            <li>
+                                <p>Bağlantınızı paylaşın</p>
+                                Arkadaşlarınızın size mesaj gönderebilmesi için bağlantınızı kullanarak sizi takip
+                                etmesi gerekiyor
+                            </li>
+                            <li>
+                                <p>Arkadaşlarınız sizi takip etsin</p>
+                                Her bağlantı bir seferde birkaç arkadaş için geçerlidir ancak istediğiniz kadar bağlantı
+                                alabilirsiniz
+                            </li>
+                            <li>
+                                <p>Geri takip edin!</p>
+                                Birbirinizi takip etmeye başladıktan sonra fikirlerinizi, hedeflerinizi ve daha
+                                fazlasını doğrudan mesajlar aracılığıyla paylaşabilirsiniz
+                            </li>
+                        </ol>
+                        <div class="socialBox">
+                            <div class="socialItem">
+                                <div class="socialImg" style="background-image: url(/images/copyLink.jpeg);;">
+                                </div>
+                                <p>Bağlantıyı kopyala</p>
+                            </div>
+                            <div class="socialItem">
+                                <div class="socialImg" style="background-image: url(/images/whatsapp.jpg);">
+                                </div>
+                                <p>WhatsApp</p>
+                            </div>
+                            <div class="socialItem">
+                                <div class="socialImg" style="background-image: url(/images/Facebook.png);"></div>
+                                <p>Facebook</p>
+                            </div>
+                            <div class="socialItem">
+                                <div class="socialImg" style="background-image: url(/images/twitter);">
+                                </div>
+                                <p>X</p>
+                            </div>
+                            <div class="socialItem">
+                                <div class="socialImg" style="background-image: url(/images/email.png);">
+                                </div>
+                                <p>E-posta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="profile.html">A</a>
+            <div id="profileBox">
+                Profiliniz
+            </div>
+        </div>
+        <div class="others">
+            <a href="#">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+    </div>
+
+
+    <section id="profile">
+        <div class="profile-data">
+            <div class="icon">A</div>
+            <p class="profileName">Agalarova Aygunn</p>
+            <span class="iconText">
+                <i class="fa-brands fa-pinterest"></i>
+                <span>agalarovaaygunn</span>
+            </span>
+            <div class="followNum">4 takip</div>
+            <div class="buttons">
+                <button class="btn share">Paylaş</button>
+                <button class="btn eidt">Profili düzenle</button>
+            </div>
+        </div>
+        <div class="creatSaved">
+            <div>
+                <a class="active" href="#">Oluşturuldu</a>
+                <a href="#">Kaydedildi</a>
+            </div>
+
+            <!-- <div class="creatSavedFoot">
+                <i class="fa-solid fa-filter"></i>
+                <i class="fa-solid fa-plus"></i>
+            </div> -->
+        </div>
+        <div class="profileFoot">
+            <p>Henüz görülecek bir şey yok! Oluşturduğunuz Pinler burada görünecek.</p>
+            <button class="btn">
+                Pin oluştur
+            </button>
+        </div>
+    </section>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

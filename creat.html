@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/style.css">
+    <link rel="icon" href="images/pinterest.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Pinterest</title>
+</head>
+
+<body>
+    <div class="questionBox">
+        <i class="fa-solid fa-question"></i>
+        <div class="helpBox">
+            <div class="helpHeadContent">
+                <a href="#">Yardım Merkezini ziyaret edin</a>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <div class="helpHeadContent">
+                <a href="#">Widget oluşturun</a>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <hr>
+            <div class="helpLinks">
+                <a href="#">Hakkında</a>
+                <a href="#">Basın odası</a>
+                <a href="#">İşletmeler</a>
+                <a href="#">Kariyer</a>
+                <a href="#">Geliştiriciler</a>
+                <a href="#">Kaldırılanlar</a>
+                <a href="#">Gizlilik Politikası</a>
+                <a href="#">Kişiselleştirilmiş Reklamlar</a>
+                <a href="#">Gizlilik Haklarınız</a>
+                <a href="#">Terimler</a>
+            </div>
+
+        </div>
+    </div>
+    <div id="navbar">
+        <img src="images/pinterest.png" alt="">
+        <button class="homebtn">
+            <a href="index.html">Ana Sayfa</a>
+            <!--   <i class="fa-solid fa-chevron-down"></i>  -->
+        </button>
+        <a class="creat" href="creat.html">Oluştur</a>
+        <div class="search">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input type="text" placeholder="Ara">
+        </div>
+        <div class="notfications">
+            <a href="#">
+                <i class="fa-solid fa-bell"></i>
+            </a>
+            <div id="notficationsBox">
+                Bildirimler
+            </div>
+        </div>
+        <div class="messages">
+            <a class="messagesDots" href="№">
+                <i class="fa-solid fa-comment-dots"></i>
+                <div id="messagesBox">
+                    Mesajlar
+                </div>
+                <div class="messagesClicked">
+                    <div class="messagesHead">
+                        <span>Gelen Kutusu</span>
+                        <div class="ellipsis">
+                            <i class=" fa-solid fa-ellipsis"> </i>
+                            <div class="ellipsisText">
+                                <span>Tümünü okundu olarak işaretle</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="messageFoot">
+                        <div class="messageSearch">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" placeholder="Ara">
+                        </div>
+                        <div class="newMessage">
+                            <div class="messageIcon">
+                                <i class="fa-regular fa-pen-to-square"></i>
+                            </div>
+                            <span>Yeni mesaj</span>
+                        </div>
+                        <div class="inviteFriend">
+                            <div class="messageIcon">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+                            <div class="text">
+                                <p style="font-weight: 500;">Arkadaşlarınızı davet edin</p>
+                                <p>Sohbete başlamak için dokunun</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- inviteFriend classına  tıkladıqda açılan box  -->
+                    <div class="inviteFriendContact">
+                        <h2>Birlikte ilham alın</h2>
+                        <ol type="1">
+                            <li>
+                                <p>Bağlantınızı paylaşın</p>
+                                Arkadaşlarınızın size mesaj gönderebilmesi için bağlantınızı kullanarak sizi takip
+                                etmesi gerekiyor
+                            </li>
+                            <li>
+                                <p>Arkadaşlarınız sizi takip etsin</p>
+                                Her bağlantı bir seferde birkaç arkadaş için geçerlidir ancak istediğiniz kadar bağlantı
+                                alabilirsiniz
+                            </li>
+                            <li>
+                                <p>Geri takip edin!</p>
+                                Birbirinizi takip etmeye başladıktan sonra fikirlerinizi, hedeflerinizi ve daha
+                                fazlasını doğrudan mesajlar aracılığıyla paylaşabilirsiniz
+                            </li>
+                        </ol>
+                        <div class="socialBox">
+                            <div class="socialItem">
+                                <div class="socialImg" style="background-image: url(/images/copyLink.jpeg);;">
+                                </div>
+                                <p>Bağlantıyı kopyala</p>
+                            </div>
+                            <div class="socialItem">
+                                <div class="socialImg" style="background-image: url(/images/whatsapp.jpg);">
+                                </div>
+                                <p>WhatsApp</p>
+                            </div>
+                            <div class="socialItem">
+                                <div class="socialImg" style="background-image: url(/images/Facebook.png);"></div>
+                                <p>Facebook</p>
+                            </div>
+                            <div class="socialItem">
+                                <div class="socialImg" style="background-image: url(/images/twitter);">
+                                </div>
+                                <p>X</p>
+                            </div>
+                            <div class="socialItem">
+                                <div class="socialImg" style="background-image: url(/images/email.png);">
+                                </div>
+                                <p>E-posta</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="profile.html">A</a>
+            <div id="profileBox">
+                Profiliniz
+            </div>
+        </div>
+        <div class="others">
+            <a href="#">
+                <i class="fa-solid fa-chevron-down"></i>
+            </a>
+        </div>
+    </div>
+
+
+
+    <section id="creat">
+        <div class="pinTaslak">
+            <div class="pinTaslak-head space-between">
+                <p>Pin taslakları</p>
+                <i class="fa-solid fa-angles-left"></i>
+            </div>
+            <button class="newButton">Yeni bir tane oluştur</button>
+
+        </div>
+        <div class="pinBoard">
+            <div class="pinBoardHead">
+                <p class="creatPin">Pin oluşturun</p>
+            </div>
+            <div class="pinBoardContent center">
+                <div class="pinBoardContent1 center">
+                    <label for="files" class="fileContent">
+                        <div class="fileContent1">
+                            <span><i class="fa-solid fa-arrow-up"></i></span>
+                            <p>Bir dosya seçin veya buraya sürükleyip bırakın</p>
+                        </div>
+                        <p class="suggestion">
+                            Öneri: Yüksek kaliteli .jpg formatında 20MB boyutundan küçük veya .mp4 formatında 200MB
+                            boyutundan küçük dosyalar kullanın.
+                        </p>
+                    </label>
+                    <input id="files" style="visibility:hidden;" type="file">
+                </div>
+                <button class="btn">
+                    <a href="#">URL'den kaydet</a>
+                </button>
+
+            </div>
+            <div class="form center">
+                <form action="#">
+                    <label class="title" for="fname">Başlık</label><br>
+                    <input type="text" id="fname" placeholder="Başlık ekleyin" name="fname"><br>
+                    <label class="title" for="fname">Açıklama</label><br>
+                    <input type="text" style="height: 70px;" id="fname"
+                        placeholder="Pininiz için ayrıntılı bir açıklama yazın veya aşağıya belirli bir liste ekleyin"
+                        name="fname"><br>
+                    <label class="title" for="fname">Bağlantı</label><br>
+                    <input type="text" id="fname" placeholder="Bağlantı ekleyin" name="fname"><br>
+                    <label class="title" for="panos">Pano</label><br>
+                    <button class="pano">
+                        <span>Bir pano seçiniz</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <br>
+                    <label class="title" for="fname">Etiketlenen konular (0)</label><br>
+                    <input type="text" id="fname" placeholder="Bir etiket ara" name="fname"><br>
+                    <span style="font-size: 12px;color: #b2beb5;">Endişelenmeyin, insanlar etiketlerinizi
+                        görmeyecek</span>
+                    <br>
+                    <div class="chooseBtn" style="margin-top: 20px;">
+                        <span> Daha fazla seçenek</span>
+                        <span><i class="fa-solid fa-chevron-down"></i></span>
+                    </div>
+                    <div class="chooseBtnDown">
+                        <div class="col1">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <span>İnsanların yorum yapmasına izin ver</span>
+                        </div>
+                        <div class="col2">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                            <p style="display: inline-block;">Benzer ürünleri göster</p><br>
+                            <span>Kullanıcılar, görsel arama özelliğini kullanarak bu Pinde gösterilene benzer ürünleri
+                                satın alabilirler</span><br>
+                            <span>Etiketli ürünler veya ücretli ortaklık etiketi içeren Fikir reklamları ve Pinler için
+                                alışveriş önerileri kullanılamaz</span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

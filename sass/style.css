@@ -1,0 +1,740 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#creat {
+  display: flex;
+  height: 80vh;
+  padding-top: 100px;
+}
+#creat .pinTaslak {
+  width: 24%;
+  height: 100vh;
+  border: 1px solid #e1e1e1;
+  padding: 0 10px;
+}
+#creat .pinTaslak .pinTaslak-head p {
+  font-weight: 500;
+  padding: 15px 0;
+  font-size: 16px;
+}
+#creat .pinTaslak .newButton {
+  width: 100%;
+  background-color: #e1e1e1;
+  color: #333;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: 500;
+}
+#creat .pinBoard {
+  border-top: 1px solid #e1e1e1;
+}
+#creat .pinBoard .creatPin {
+  font-size: 20px;
+  font-weight: 500;
+}
+#creat .pinBoard .pinBoardHead {
+  padding: 28px 40px;
+  border-bottom: 1px solid #e1e1e1;
+}
+#creat .pinBoard .pinBoardContent {
+  padding: 20px 0;
+}
+#creat .pinBoard .pinBoardContent .pinBoardContent1 {
+  width: 55%;
+  border-bottom: 1px solid #b2beb5;
+}
+#creat .pinBoard .pinBoardContent .fileContent {
+  display: flex;
+  flex-direction: column;
+  background-color: #efefef;
+  border: 2px dashed #b2beb5;
+  height: 65vh;
+  border-radius: 30px;
+  font-weight: 400;
+}
+#creat .pinBoard .pinBoardContent .fileContent .fileContent1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40%;
+}
+#creat .pinBoard .pinBoardContent .fileContent .fileContent1 span {
+  background-color: #000;
+  text-align: center;
+  line-height: 15px;
+  width: 15px;
+  height: 15px;
+  color: #efefef;
+  border-radius: 50%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+#creat .pinBoard .pinBoardContent .fileContent .fileContent1 p {
+  width: 60%;
+  font-size: 15px;
+  text-align: center;
+  line-height: 22px;
+}
+#creat .pinBoard .pinBoardContent .fileContent .suggestion {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 15%;
+  font-size: 13px;
+  line-height: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#creat .pinBoard .btn {
+  width: 35%;
+  margin: 20px 0;
+}
+#creat .pinBoard .btn a {
+  color: #333;
+}
+#creat .form form {
+  width: 80%;
+  margin-bottom: 40px;
+}
+#creat .form form .pano {
+  background: none;
+  font-size: 15px;
+  width: 100%;
+  border: 2px solid #b2beb5;
+  padding: 12px 12px 18px 12px;
+  border-radius: 12px;
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+}
+#creat .form .title {
+  font-size: 12px;
+}
+#creat .form input {
+  font-size: 15px;
+  width: 100%;
+  border: 2px solid #b2beb5;
+  outline: none;
+  padding: 12px 12px 18px 12px;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+#creat .form input::-moz-placeholder {
+  text-wrap: wrap;
+}
+#creat .form input::placeholder {
+  text-wrap: wrap;
+}
+#creat .form .chooseBtn {
+  font-size: 15px;
+  font-weight: 500;
+}
+#creat .form .chooseBtnDown .col1, #creat .form .chooseBtnDown .col2 {
+  margin: 20px 0;
+}
+#creat .form .chooseBtnDown .col2 span {
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 600px) {
+  .pinBoardContent1 {
+    border-bottom: 1px solid #b2beb5;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .pinBoardContent1 {
+    width: 45% !important;
+  }
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #000;
+  background-color: #000;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 28px;
+  left: -3px;
+  top: -1px;
+  border: 1px solid #000;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #fff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+.slider.round {
+  border-radius: 30px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+section#profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+section#profile .profile-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+section#profile .profile-data .buttons {
+  margin-top: 20px;
+}
+section#profile .profile-data .buttons .btn:hover {
+  background-color: rgba(149, 165, 166, 0.6);
+}
+section#profile .profile-data .icon {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 36px;
+  font-weight: 500;
+  padding: 20px;
+  background-color: #e1e1e1;
+}
+section#profile .profile-data .profileName {
+  font-size: 36px;
+  font-weight: 500;
+}
+section#profile .profile-data .iconText {
+  color: #5f5f5f;
+  margin: 15px 0;
+}
+section#profile .profile-data .iconText span {
+  font-weight: bold;
+}
+section#profile .creatSaved {
+  margin: 20px;
+}
+section#profile .creatSaved a {
+  color: hsl(0, 0%, 7%);
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+section#profile .creatSaved a.active {
+  padding-bottom: 10px;
+  border-bottom: 3px solid #111;
+  margin-right: 20px;
+}
+section#profile .creatSaved a:hover {
+  background-color: #e1e1e1;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+}
+section#profile .profileFoot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+section#profile .profileFoot .btn {
+  background-color: #e60023;
+  color: #fff;
+  padding: 10px 15px;
+  margin-top: 20px;
+  transition: 0.4s;
+}
+section#profile .profileFoot .btn:hover {
+  background-color: #a4061e;
+}
+
+.btn {
+  border: none;
+  font-size: 16px;
+  padding: 15px 15px;
+  font-weight: 500;
+  border-radius: 25px;
+  transition: 0.4s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.end {
+  text-align: end;
+}
+
+a {
+  text-decoration: none;
+}
+
+.questionBox:hover {
+  background-color: #e6e6e6;
+}
+
+.questionBox {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 3px 12px 2px rgba(0, 0, 0, 0.22);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  height: 56px;
+  width: 56px;
+  text-align: center;
+}
+.questionBox .fa-question {
+  color: #000;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 56px;
+  font-weight: 600;
+}
+.questionBox .helpBox {
+  width: 350px;
+  background-color: #fff;
+  color: #111111;
+  position: fixed;
+  right: 6%;
+  bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 12px 6px rgba(0, 0, 0, 0.22);
+  display: none;
+}
+.questionBox .helpBox .helpHeadContent:hover {
+  background-color: #e1e1e1;
+}
+.questionBox .helpBox .helpHeadContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  transition: 0.4s;
+}
+.questionBox .helpBox .helpHeadContent i {
+  font-size: 12px;
+}
+.questionBox .helpBox .helpHeadContent a {
+  color: #111111;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 0;
+}
+.questionBox .helpBox .helpLinks {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.questionBox .helpBox .helpLinks a {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px;
+  padding-right: 10px;
+  color: #5f5f5f;
+}
+.questionBox .helpBox .helpLinks a:hover {
+  text-decoration: underline;
+}
+
+#navbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding: 5px 0;
+  width: 100%;
+  height: 70px;
+}
+#navbar img {
+  width: 30px;
+  height: 30px;
+}
+#navbar .homebtn {
+  background-color: black;
+  color: #fff;
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+}
+#navbar .homebtn a {
+  color: #fff;
+}
+#navbar .creat {
+  color: #333;
+  font-weight: 500;
+}
+#navbar .search {
+  width: 50%;
+  background-color: #e1e1e1;
+  color: #333;
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 16px;
+  display: none;
+}
+#navbar .search input {
+  background-color: #e1e1e1;
+  border: none;
+  font-size: 16px;
+}
+#navbar .fa-bell,
+#navbar .fa-comment-dots {
+  color: #5f5f5f;
+  font-size: 24px;
+}
+#navbar .messages {
+  transition: 0.6s;
+}
+#navbar .messages .messagesClicked {
+  height: 90vh;
+  background-color: #fff;
+  color: #333;
+  box-shadow: -1px 1px 20px -1px rgba(0, 0, 0, 0.75);
+  width: 350px;
+  position: fixed;
+  top: 60px;
+  right: 10px;
+  border-radius: 20px;
+  display: none;
+  transition: 0.6s;
+}
+#navbar .messages .messagesClicked .inviteFriendContact {
+  display: none;
+  height: 70vh;
+  padding: 20px;
+  overflow: auto;
+}
+#navbar .messages .messagesClicked .inviteFriendContact ol li {
+  margin: 20px 0 20px 15px;
+  font-size: 12px;
+  line-height: 18px;
+}
+#navbar .messages .messagesClicked .inviteFriendContact p {
+  font-size: 16px;
+  font-weight: 500;
+}
+#navbar .messages .messagesClicked .inviteFriendContact h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+#navbar .messages .messagesClicked .inviteFriendContact li {
+  font-size: 14px;
+}
+#navbar .messages .messagesClicked .inviteFriendContact .socialBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+#navbar .messages .messagesClicked .inviteFriendContact .socialBox .socialItem {
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 40px 20px 0;
+}
+#navbar .messages .messagesClicked .inviteFriendContact .socialBox .socialItem p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+#navbar .messages .messagesClicked .inviteFriendContact .socialBox .socialItem .socialImg {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#navbar .messages .messagesClicked .messageFoot {
+  padding-left: 10px;
+}
+#navbar .messages .messagesClicked .messageFoot .messageSearch {
+  width: 85%;
+  border-radius: 50px;
+  border: 2px solid #e1e1e1;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+#navbar .messages .messagesClicked .messageFoot .messageSearch span {
+  margin: 0 20px;
+}
+#navbar .messages .messagesClicked .messageFoot .newMessage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 10px 10px 0;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+#navbar .messages .messagesClicked .messageFoot .newMessage .messageIcon {
+  width: 28px;
+  font-size: 22px;
+  background-color: #e60023;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+}
+#navbar .messages .messagesClicked .messageFoot .newMessage span {
+  font-weight: 500;
+}
+#navbar .messages .messagesClicked .messageFoot .newMessage:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#navbar .messages .messagesClicked .messageFoot .inviteFriend:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+#navbar .messages .messagesClicked .messageFoot .inviteFriend {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+#navbar .messages .messagesClicked .messageFoot .inviteFriend .messageIcon {
+  width: 28px;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #000;
+  border-radius: 50%;
+  padding: 10px;
+  margin-right: 10px;
+}
+#navbar .messages .messagesClicked .messagesHead {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  line-height: 56px;
+  margin-bottom: 20px;
+}
+#navbar .messages .messagesClicked .messagesHead span,
+#navbar .messages .messagesClicked .messagesHead .ellipsis {
+  font-size: 16px;
+  font-weight: 500;
+}
+#navbar .messages .messagesClicked .messagesHead span i,
+#navbar .messages .messagesClicked .messagesHead .ellipsis i {
+  position: absolute;
+  right: 10%;
+  top: 3%;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+}
+#navbar .messages .messagesClicked .messagesHead span .ellipsisText,
+#navbar .messages .messagesClicked .messagesHead .ellipsis .ellipsisText {
+  background-color: #e1e1e1;
+  box-shadow: 0px 2px 5px 4px rgba(0, 0, 0, 0.1);
+  border: 8px solid #fff;
+  position: absolute;
+  right: 0;
+  width: 40%;
+  line-height: 20px;
+  border-radius: 15px;
+  padding: 5px 0;
+  display: none;
+}
+#navbar .notfications,
+#navbar .messages,
+#navbar .profile {
+  position: relative;
+  transition: 0.6s;
+}
+#navbar #notficationsBox,
+#navbar #messagesBox,
+#navbar #profileBox {
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  padding: 9px 7px;
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  margin-top: 8px;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+#navbar .notfications:hover #notficationsBox {
+  opacity: 1;
+}
+#navbar .body {
+  background-color: #e60023;
+}
+#navbar .messages:hover #messagesBox {
+  opacity: 1;
+}
+#navbar .profile:hover #profileBox {
+  opacity: 1;
+}
+#navbar .profile {
+  background-color: #e1e1e1;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 10px;
+  transition: 1s;
+}
+#navbar .profile a {
+  color: #333;
+  font-weight: 500;
+}
+#navbar .others {
+  color: #5f5f5f;
+  font-size: 14px;
+}
+#navbar .others i {
+  color: #5f5f5f;
+  font-size: 18px;
+}
+
+#pins {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 100px 10px;
+}
+#pins .card:hover .cardBox {
+  opacity: 1;
+}
+#pins .card {
+  width: 99%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  position: relative;
+  z-index: -1;
+}
+#pins .card img {
+  width: 100%;
+  max-height: 350px;
+  border-radius: 20px;
+}
+#pins .card .cardBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 99%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border-radius: 20px;
+  transition: 0.6s ease;
+}
+#pins .card .cardBox .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+#pins .card .cardBox .card-header button {
+  background-color: #e60023;
+  color: #fff;
+  border-radius: 20px;
+  padding: 12px 16px;
+  border: none;
+  font-weight: 500;
+}
+#pins .card .cardBox .card-footer {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+}
+#pins .card .cardBox .card-footer i {
+  background-color: #e1e1e1;
+  padding: 10px;
+  border-radius: 50%;
+  color: #333;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+  #pins {
+    margin: 100px 60px;
+  }
+  #pins .card {
+    width: 48%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #pins .card {
+    width: 32%;
+  }
+  #navbar .search {
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #pins .card {
+    width: 19%;
+  }
+}/*# sourceMappingURL=style.css.map */
